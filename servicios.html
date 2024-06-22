@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - Chile Motors</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--        Menú      -->
+    <nav class="navbar navbar-expand-md sticky-top py-3 navbar-dark bg-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><span class="text-primary">CHILE</span>motors</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-start"
+          aria-controls="navbar-start"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-start">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!---Carrito-->
+      <!-- Botón para abrir el offcanvas del carrito -->
+      <button
+        class="btn btn-success"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#cartOffcanvas"
+        aria-controls="cartOffcanvas"
+      >
+        Carrito
+      </button>
+    </nav>
+    <!-- Offcanvas del carrito -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cartOffcanvas"
+      aria-labelledby="cartOffcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartOffcanvasLabel">
+          Tu carrito de compras
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Contenido del carrito -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- productos en el carrito -->
+            <tr>
+              <td>Producto 1</td>
+              <td>$10.00</td>
+              <td>2</td>
+              <td>$20.00</td>
+            </tr>
+            <tr>
+              <td>Producto 2</td>
+              <td>$15.00</td>
+              <td>1</td>
+              <td>$15.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Botones-->
+      </div>
+      <div class="offcanvas-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="offcanvas"
+        >
+          Cerrar
+        </button>
+        <button type="button" class="btn btn-success">Pagar</button>
+      </div>
+    </div>
+    <!--     Cierre   Menú      -->  
+    <body>
+    
+  
+    
+
+    <!--  footer-->
+    <footer class="bg-dark p-2 text-center">
+      <div>
+        <div class="row footer">
+          <div
+            class="col-sm-4 col-md-4 text-center text-lg-start d-flex flex-column pad"
+          >
+            <h3 class="fs-6">Información</h3>
+            <ul>
+              <li><a href="#">Terminos legales</a></li>
+              <li><a href="#">Envios</a></li>
+              <li><a href="#">Envios</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-sm-4 col-md-4 text-center text-lg-start d-flex flex-column pad"
+          >
+            <h3 class="fs-6">Categorias</h3>
+            <ul>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Repuestos</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-sm-4 col-md-4 text-center text-lg-start d-flex flex-column pad"
+          >
+            <h3 class="fs-6">Contacto</h3>
+            <ul>
+              <li><a href="contacto.html">Contactanos</a></li>
+              <li><a href="#">contacto@chilemotors.cl</a></li>
+              <li><a href="#">+56 9 5432 5432</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <hr />
+        <p class="text-white">® Programación Web 2024</p>
+      </div>
+    </footer>
+    <!--  footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

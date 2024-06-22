@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio - Chile Motors</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--        Menú      -->
+    <nav class="navbar navbar-expand-md sticky-top py-3 navbar-dark bg-dark">
+      <div class="container">
+        <a href="index.html" class="navbar-brand"
+          ><span class="text-primary">CHILE</span>motors</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbar-start"
+          aria-controls="navbar-start"
+          aria-expanded="false"
+          aria-label="toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-start">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+             <a class="nav-link" href="nosotros.html">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto.html">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="productos.html">Productos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!---Carrito-->
+      <!-- Botón para abrir el offcanvas del carrito -->
+      <button
+        class="btn btn-success"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#cartOffcanvas"
+        aria-controls="cartOffcanvas"
+      >
+        Carrito
+      </button>
+    </nav>
+    <!-- Offcanvas del carrito -->
+    <div
+      class="offcanvas offcanvas-end"
+      tabindex="-1"
+      id="cartOffcanvas"
+      aria-labelledby="cartOffcanvasLabel"
+    >
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="cartOffcanvasLabel">
+          Tu carrito de compras
+        </h5>
+        <button
+          type="button"
+          class="btn-close text-reset"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- Contenido del carrito -->
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Producto</th>
+              <th scope="col">Precio</th>
+              <th scope="col">Cantidad</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- productos en el carrito -->
+            <tr>
+              <td>Producto 1</td>
+              <td>$10.00</td>
+              <td>2</td>
+              <td>$20.00</td>
+            </tr>
+            <tr>
+              <td>Producto 2</td>
+              <td>$15.00</td>
+              <td>1</td>
+              <td>$15.00</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- Botones-->
+      </div>
+      <div class="offcanvas-footer">
+        <button
+          type="button"
+          class="btn btn-secondary"
+          data-bs-dismiss="offcanvas"
+        >
+          Cerrar
+        </button>
+        <button type="button" class="btn btn-success">Pagar</button>
+      </div>
+    </div>
+    <!--     Cierre   Menú      -->
+
+    <!--    Carrusel  -->
+    <div id="carouselE1" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselE1"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselE1"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselE1"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/car1.jpg" class="d-block w-100" alt="" />
+          <div class="carousel-caption">
+            <h5>Los mejores motores</h5>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+            </p>
+            <!--<p><a href="#" class="btn btn-primary mt-3">Leer Más</a></p>-->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/car2.png" class="d-block w-100" alt="" />
+          <div class="carousel-caption">
+            <h5>Los mejores motores</h5>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+            </p>
+            <!--<p><a href="#" class="btn btn-primary mt-3">Leer Más</a></p>-->
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/car3.jpg" class="d-block w-100" alt="" />
+          <div class="carousel-caption">
+            <h5>Los mejores motores</h5>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+            </p>
+            <!--<p><a href="#" class="btn btn-primary mt-3">Leer Más</a></p>-->
+          </div>
+        </div>
+      </div>
+
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselE1"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselE1"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="services">
+      <h2 class="text-center">Nuestros Servicios</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4 mb-3">
+            <div class="card-text-white text-center bg-car1 pb-2">
+              <div class="card-body">
+                <h3 class="card-title">Faros antinieblas</h3>
+                <p class="card-p">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                </p>
+                <a href="planes.html" class="btn bg-primary text-white">Apreta Aqui</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-12 col-md-12 col-lg-4 mb-3">
+            <div class="card-text-white text-center bg-car2 pb-2">
+              <div class="card-body">
+                <h3 class="card-title">Pintado moderno</h3>
+                <p class="card-p">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                </p>
+                <a href="planes.html" class="btn bg-primary text-white">Apreta Aqui</a>
+              </div>
+            </div>
+          </div>
+    
+          <div class="col-12 col-md-12 col-lg-4 mb-3">
+            <div class="card-text-white text-center bg-car3 pb-2">
+              <div class="card-body">
+                <h3 class="card-title">Tapizado personalizado</h3>
+                <p class="card-p">
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s, when an unknown
+                  printer took a galley of type and scrambled it to make a type
+                </p>
+                <a href="planes.html" class="btn bg-primary text-white">Apreta Aqui</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!--  Cierre  Servicios   -->
+
+    <!--    sección Envio gratis reembolso y regalo-->
+
+    <section class="section-icons">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-4 box-icons">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-airplane"></i>
+              <div class="ms4">
+                <h3>Envio gratis</h3>
+                <p>Envíos gratis a Chile por compras sobre $500.000</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-4 box-icons">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-cash-coin"></i>
+              <div class="ms4">
+                <h3>Reembolso</h3>
+                <p>
+                  Contamos con garantia de satisfacción con el 100% de reembolso
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-4 box-icons">
+            <div class="d-flex align-items-center">
+              <i class="bi bi-gift-fill"></i>
+              <div class="ms4">
+                <h3>Regalo</h3>
+                <p>Obtén un regalo por realizar tu compra con nosotros</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--    sección Envio gratis reembolso y regalo-->
+
+    <!--    Productos  -->
+    <section class="product">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-header text-center pb-5">
+              <h2>Nuestros Productos</h2>
+              <p>
+                En nuestro catálogo encontrarás la solución perfecta para
+                mantener tu vehículo en óptimas condiciones.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!--  Sección de productos -->
+        <div class="row">
+          <div class="col-12 col-md-12 col-lg-3">
+            <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+              <div class="text-center">
+                <img src="img/pr1.png" alt="" class="img-fluid" />
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Rueda</h5>
+                <p>Delantera Y Trasera Gm Modelo 26233367</p>
+                <!-- <a href="#" class="btn btn-primary">Ver mas</a>-->
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#quick-view"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-3">
+            <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+              <div class="text-center">
+                <img src="img/pr2.png" alt="" class="img-fluid" />
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Llanta</h5>
+                <p>Llanta Gm 52084928</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#quick-view"
+                >
+                  Ver más
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-3">
+            <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+              <div class="text-center">
+                <img src="img/pr3.png" alt="" />
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Volante</h5>
+                <p>Manubrio de resina negro de 3 pernos</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#quick-view"
+                >
+                  Ver más
+                </button>
+                <!--<a href="#" class="btn btn-primary">Ver mas</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-3">
+            <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+              <div class="text-center">
+                <img src="img/pr4.png" alt="" />
+              </div>
+              <div class="card-body">
+                <h5 class="cproduct-title">Motor</h5>
+                <p>D4CB INYECCION DELPHI 2.5</p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#quick-view"
+                >
+                  Ver más
+                </button>
+                <!--<a href="#" class="btn btn-primary">Ver mas</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-3">
+            <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+              <div class="text-center">
+                <img src="img/pr5.png" alt="" />
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Card Title</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio deleniti minima autem rerum eligendi modi minus
+                  asperiores et exercitationem?
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#quick-view"
+                >
+                  Ver más
+                </button>
+                <!--<a href="#" class="btn btn-primary">Ver mas</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-3">
+            <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+              <div class="text-center">
+                <img src="img/pr6.png" alt="" />
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Card Title</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio deleniti minima autem rerum eligendi modi minus
+                  asperiores et exercitationem?
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#quick-view"
+                >
+                  Ver más
+                </button>
+                <!--<a href="#" class="btn btn-primary">Ver mas</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-3">
+            <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+              <div class="text-center">
+                <img src="img/pr7.png" alt="" />
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Card Title</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio deleniti minima autem rerum eligendi modi minus
+                  asperiores et exercitationem?
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#quick-view"
+                >
+                  Ver más
+                </button>
+                <!--<a href="#" class="btn btn-primary">Ver mas</a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-3">
+            <div class="card bg-light shadow-sm border-0 px-2 py-3 mb-4">
+              <div class="text-center">
+                <img src="img/pr8.png" alt="" />
+              </div>
+              <div class="card-body">
+                <h5 class="product-title">Card Title</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Distinctio deleniti minima autem rerum eligendi modi minus
+                  asperiores et exercitationem?
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#quick-view"
+                >
+                  Ver más
+                </button>
+                <!--<a href="#" class="btn btn-primary">Ver mas</a> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL -->
+    <!-- Rueda -->
+    <div
+      class="modal fade"
+      id="quick-view"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <img src="img/pr1.png" alt="" class="img-fluid" />
+                </div>
+                <div class="col-md-6">
+                  <div class="info">
+                    <h2>Rueda</h2>
+                    <p>Referencia: 26233367</p>
+                    <div class="precio">
+                      <p class="precio-final">$1.329.000</p>
+                      <p class="precio-normal">$1.390.000</p>
+                      <p class="descuento">-$61.000</p>
+                    </div>
+                    <hr />
+                    <div class="details">
+                      <h3>
+                        Los Drones DJI Mini 4 Pro Fly More Combo Plus (DJI RC 2)
+                        te dan imágenes únicas
+                      </h3>
+                      <p>
+                        Embárcate en un mundo de creatividad ilimitada y
+                        momentos inolvidables con Mini 4 Pro. Con su diseño
+                        ligero, funciones avanzadas y rendimiento incomparable,
+                        ya seas profesional o principiante, ¡Mini 4 Pro es
+                        genial para capturar imágenes asombrosas!
+                      </p>
+                      <ul>
+                        <li>Menos de 249g</li>
+                        <li>Vídeos verticales en 4K/60 fps HDR</li>
+                        <li>
+                          Más seguridad con detección de obstáculos
+                          omnidireccional
+                        </li>
+                        <li>
+                          Sumérgete en los vídeos aéreos en tiempo real con
+                          transmisión de vídeo FHD a 20 km
+                        </li>
+                        <li>Vuelos ininterrumpidos con más batería</li>
+                        <li>Incluye Control RC 2</li>
+                        <li>Versión Fly More Combo</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="add-to-cart">
+                    <div class="col-md-12">
+                      <input type="number" name="qty" value="1" min="1" />
+                      <button>
+                        <i class="bi bi-cart"></i>Añadir al Carrito
+                      </button>
+                    </div>
+                    <hr />
+                  </div>
+
+                  <div class="etiquetas">
+                    <ul>
+                      <li><a href="#">Drone</a></li>
+                      <li><a href="#">Fly More Combo</a></li>
+                      <li><a href="#">Mini</a></li>
+                      <li><a href="#">Drone Compacto</a></li>
+                      <li><a href="#">Mini Serie</a></li>
+                      <li><a href="#">DJI Mini 4 Pro</a></li>
+                      <li><a href="#">Dron Mini 4 RC 2</a></li>
+                      <li><a href="#">DJI RC 2 Mini 4 Pro</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--    Productos  -->
+
+    <!--   Banner   -->
+    <section class="banner-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h2>Las mejores piezas para tu automovil</h2>
+            <div>
+              <img src="img/mo1.png" alt="Imagen de motor de auto" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--   Banner   -->
+
+    <!--  footer-->
+    <footer class="bg-dark p-2 text-center">
+      <div>
+        <div class="row footer">
+          <div
+            class="col-sm-4 col-md-4 text-center text-lg-start d-flex flex-column pad"
+          >
+            <h3 class="fs-6">Información</h3>
+            <ul>
+              <li><a href="#">Terminos legales</a></li>
+              <li><a href="#">Envios</a></li>
+              <li><a href="#">Envios</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-sm-4 col-md-4 text-center text-lg-start d-flex flex-column pad"
+          >
+            <h3 class="fs-6">Categorias</h3>
+            <ul>
+              <li><a href="#">Servicios</a></li>
+              <li><a href="#">Productos</a></li>
+              <li><a href="#">Repuestos</a></li>
+            </ul>
+          </div>
+          <div
+            class="col-sm-4 col-md-4 text-center text-lg-start d-flex flex-column pad"
+          >
+            <h3 class="fs-6">Contacto</h3>
+            <ul>
+              <li><a href="contacto.html">Contactanos</a></li>
+              <li><a href="#">contacto@chilemotors.cl</a></li>
+              <li><a href="#">+56 9 5432 5432</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <hr />
+        <p class="text-white">® Programación Web 2024</p>
+      </div>
+    </footer>
+    <!--  footer-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
